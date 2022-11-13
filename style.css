@@ -1,0 +1,83 @@
+html{
+     font-size: 20px;
+     color: antiquewhite;
+}
+
+body {
+     font-family: "Roboto Mono" , monospace;
+     min-height: 400px;
+
+     background-color: rgb(130, 158, 187);
+
+}
+.titulo{
+
+}
+
+.container {
+     text-align: center;
+     padding: 30px;
+
+
+}
+.flex-content{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.dolar{
+     text-align: center;
+     width:50vw;
+     height:50vh;
+}
+
+.euro{
+     text-align: center;
+     width:50vw;
+     height:50vh;
+
+}
+
+.Conteudobotao{
+
+     height:40px;
+     width: 115px;
+     border:none;
+     box-shadow: antiquewhite;
+     border-radius: 5px;
+     font-family: "Roboto Mono" , monospace;
+     font-weight:400;
+     font-size: 20px;
+
+}
+
+.cifrao{
+     text-align: center;
+     width: 77px;
+     height: 80px;
+
+}
+
+.imagem-dolar{
+     height: 65px;
+     width: 65px;
+}
+.imagem-euro{
+     height: 65px;
+     width: 65px;
+}
+.resultado{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+.real{
+     display: flex;
+     justify-content: center;
+     height: 65px;
+     width: 65px;
+}

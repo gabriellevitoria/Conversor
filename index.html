@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt.br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Converse</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="container">
+        <img class="cifrao " src="cifrao.png" alt="cifrao">
+        <h1 class="titulo">
+            Conversor de moedas
+        </h1>
+        <p class="subtititulo">
+            Descubra os valores em real R$
+        </p>
+
+    </div>
+
+    <div class="flex-content">
+        <div class="dolar">
+
+            <label>Insira o valor em dolar </label></br>
+            <input type="number" id="valorDolar" size="10" /></br>
+            <img class="imagem-dolar" src="dinheiro.png">
+        </div>
+
+        <div class="botao">
+            <button class="Conteudobotao" type="submit" onclick="converter()">Converter</button>
+        </div>
+
+        <div class="euro">
+
+            <label>Insira o valor em euro </label></br>
+            <input type="number" id="valorEuro" size="10" /></br>
+            <img class="imagem-euro" src="euros(1).png">
+        </div>
+
+    </div>
+
+    <div class="resultado">
+        <h2 id="valorConvertidoDolar"></h2></br>
+        <h2 id="valorConvertidoEuro"></h2></br>
+        <img class="real" src="real-brasileiro.png">
+    </div>
+
+    <script>
+
+        function converter() {
+            var dolar = parseFloat(document.getElementById('valorDolar').value);
+            var euro = parseFloat(document.getElementById('valorEuro').value);
+            var message = 'o Resultado em real é R$ '
+            var elementoVaConvertidoDolar = document.getElementById("valorConvertidoDolar");
+            var elementoVaConvertidoEuro = document.getElementById('valorConvertidoEuro');
+
+            if (dolar) {
+                elementoVaConvertidoEuro.innerHTML = ''
+                elementoVaConvertidoDolar.innerHTML = `${message}${dolar * 5}`;
+
+            } else {
+                elementoVaConvertidoDolar.innerHTML= ''
+                elementoVaConvertidoEuro.innerHTML = `${message}${euro * 6}`;
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
